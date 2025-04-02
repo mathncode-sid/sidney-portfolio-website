@@ -1,0 +1,362 @@
+:root {
+    --text-color: #10e4eb;
+    --link-color: #ededed;
+    --background-color: #081b29;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+h2{
+    color:var(--text-color)
+}
+
+h3{
+    color:var(--text-color);
+}
+p {
+    color: var(--link-color)
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+    font-size: 19px;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/*--SECTION 1 - HERO SECTION*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 150px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--link-color)
+}
+
+.hero-section .text h3{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.hero-section .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color)
+}
+
+.hero-section .headshot {
+    flex: 2;
+}
+
+.hero-section .headshot img{
+    border-radius: 100%;
+    width: 300;
+}
+
+/*SECTION 2: PROGRAMMING LANGUAGES*/
+.languages-section {
+    padding: 0 50px;
+    margin-bottom: 200px;
+}
+
+.languages-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.languages-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.languages-section .cells .cell {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 200 px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid var(--text-color);
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.languages-section .cells .cell img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+
+.languages-section .cells .cell span{
+    font-size: 18px;
+    color: var(--link-color)
+}
+
+/*SECTION 3: CONTACT SECTION*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 150px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+}
+
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+    color: var(--link-color);
+}
+
+.contact-section .group label{
+    color: var(--text-color);
+}
+
+.contact-section .group form input,.contact-section .group select, .contact-section .group form textarea {
+    font-family: "Poppins", sans-serif;
+    border: 2px solid var(--text-color);
+    border-radius: 8px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+    border-radius: 8px;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
+/* Circular Progress Section */
+.progress-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.progress-section h2 {
+    font-size: 35px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.progress-cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.progress-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.circular-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4caf50 calc(var(--progress) * 1%), 
+        #e0e0e0 0
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: var(--background-color);
+    padding: 5px;
+}
+
+.progress-cell span {
+    font-size: 18px;
+    color: var(--link-color);
+}
+
+@media(max-width: 850px){
+    /*SECTION 1: HERO SECTION*/
+    .hero-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+
+@media(max-width: 860px) {
+    /*SECTION 1: HERO SECTION*/
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img {
+        width: 200px;
+    }
+    .hero-section .text h2 {
+        font-size: 40px;
+    }
+    .hero-section .text h3 {
+        font-size: 25px;
+    }
+
+
+    /*SECTION 2: PROGRAMMING LANGUAGES*/
+    .languages-section {
+        padding: 0 20px;
+    }
+
+    .languages-section .cells .cell span {
+        font-size: 16px;
+    }
+
+    /*SECTION 3: CONTACT SECTION*/
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 600px) {
+    /*NAVBAR */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px ;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span {
+        display: none;
+    }
+
+    /*SECTION 1: HERO SECTION*/
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+    .hero-section .text h3 {
+        font-size: 20px;
+    }
+
+    /*SECTION 3: CONTACT SECTION*/
+    .contact-section{
+        padding: 0 20px;
+    }
+}
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Welcome To My Portfolio</title>
+</head>
+<body>
+   <!--NAVBAR--> 
+   <nav>
+    <div class="left">
+        <a href="/">S.B</a>
+    </div>
+    <div class="right">
+        <a href="https://github.com/mathncode-sid" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> 
+            <span>Github</span> 
+        </a>
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="http://mailto:sidneybarakamuriuki1@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </a>
+    </div>
+   </nav>
+
+   <main>
+    <!--SECTION 1 - HERO SECTION-->
+    <section class="hero-section">
+        <div class="text">
+            <h2>Hello, I am Sidney</h2>
+            <h3>AI|ML|Data Science|Python Enthusiast</h3>
+            <p>Welcome to my corner of the web—a space where creativity meets code. Here, 
+                you’ll find a showcase of my latest projects, a glimpse into my problem-solving 
+                mindset, and insights into the world of technology that inspire me. Whether 
+                you’re here to explore, collaborate, or simply see what I’m building, I’m excited 
+                to share my journey with you. Dive in, get inspired, and let’s connect on what’s 
+                possible in the world of tech.</p>
+
+            <div class="links">
+                <a href="">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>About Me</span>
+                </a>
+                <a href="#prog-languages">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Tools and Technologies</span>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact Me</span>
+                </a>
+            </div> 
+        </div>
+        <div class="headshot">
+          <img src="./assets/headshot.webp" alt="Sidney headshot">
+        </div>
+    </section>
+
+    <!--SECTION 2 - PROGRAMMING LANGUAGES SECTION-->
+    <section id="prog-languages" class="languages-section">
+        <h2>Tools and Technologies</h2>
+        <div class="text">
+            <p>I am constantly expanding my technical skills by learning and applying various programming languages and tools. Technology evolves, and so do I. With continuous learning and hands-on practice, I aim to master more frameworks, tools, and languages. This journey fuels my passion for innovation and problem-solving in the tech space. Currently, I am proficient in:</p>
+        </div>
+
+        <div class="cells">
+            <div class="cell">
+                <img src="./assets/html5-logo.webp" alt="html5">
+                <span>HTML</span>
+
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="./assets/css-logo.webp" alt="css">
+                    <span>CSS</span>
+                </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="./assets/mysqllogo.webp" alt="sql">
+                    <span>SQL</span>
+                </div>
+            
+            <div class="cells">
+                <div class="cell">
+                    <img src="./assets/pythonlogo.webp" alt="python">
+                    <span>Python</span>
+                </div>
+        </div>
+    </section>
+
+    <!-- Add this section below the programming languages section -->
+<section id="progress-so-far" class="progress-section">
+    <h2>Progress:</h2>
+    <div class="progress-cells">
+        <div class="progress-cell">
+            <div class="circular-progress" style="--progress: 50;">
+                <img src="./assets/html5-logo.webp" alt="HTML">
+            </div>
+            <span>HTML - 50%</span>
+        </div>
+        <div class="progress-cell">
+            <div class="circular-progress" style="--progress: 55;">
+                <img src="./assets/css-logo.webp" alt="CSS">
+            </div>
+            <span>CSS - 65%</span>
+        </div>
+        <div class="progress-cell">
+            <div class="circular-progress" style="--progress: 55;">
+                <img src="./assets/mysqllogo.webp" alt="SQL">
+            </div>
+            <span>SQL - 55%</span>
+        </div>
+        <div class="progress-cell">
+            <div class="circular-progress" style="--progress: 65;">
+                <img src="./assets/pythonlogo.webp" alt="Python">
+            </div>
+            <span>Python - 65%</span>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!--SECTION 3 - CONTACT SECTION-->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="group">
+            <div class="text">
+                <p>I’d love to connect with you! Whether you have a project in mind, need assistance, or just want to network, feel free to reach out. I am always open to opportunities for collaboration and professional growth.</p>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="hidden" name="access_key" value="ba831fe1-f32b-4932-b4e6-2cfeae9aca06">
+                <input type="text" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="text" name="email" placeholder="Enter your email" required>
+
+                <label for="reason">Reason for reaching out:</label>
+                <select name="reason" id="reason">
+                    <option value="" selected>Select the reason from the dropdown below</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="job offer">Job Offer</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Detailed message:</label>
+                <textarea name="message" id="message" placeholder="Enter your detailed message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+   </main>
+</body>
+</html>
