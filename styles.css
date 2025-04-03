@@ -287,6 +287,128 @@ nav .right a span {
     color: var(--link-color);
 }
 
+/* About Me Section */
+.about-me-section {
+    padding: 50px;
+    background-color: var(--background-color);
+    color: var(--link-color);
+    margin-bottom: 50px;
+}
+
+.about-me-section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-content h3 {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.about-content p, .about-content ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.download-cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv-button:hover {
+    background-color: #0bb5c3;
+}
+
+.about-content .interests {
+    margin-top: 20px;
+}
+
+.about-content .interests h3 {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.about-content .interests p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--link-color);
+}
+
+/* About Me Section Cards */
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--link-color);
+}
+
+.card p, .card ul {
+    font-size: 1rem;
+    color: var(--background-color);
+}
+
+.card a.download-cv-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: var(--background-color);
+    color: var(--link-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.card a.download-cv-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hover Animation */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 @media(max-width: 850px){
     /*SECTION 1: HERO SECTION*/
     .hero-section .text h2 {
