@@ -33,7 +33,7 @@ h3{
     color:var(--text-color);
 }
 p {
-    color: var(--link-color)
+    color: var (--link-color)
 }
 
 /* NAVBAR */
@@ -121,6 +121,9 @@ nav .right a span {
     border-radius: 100%;
     width: 300;
 }
+.hero-section p {
+    color: var(--link-color);
+}
 
 /* SECTION 2 - ABOUT ME SECTION */
 .about-me-section {
@@ -188,7 +191,7 @@ nav .right a span {
 .about-content .interests p {
     font-size: 18px;
     line-height: 1.6;
-    color: var(--link-color);
+    color: var (--link-color);
 }
 
 /* About Me Section Cards */
@@ -219,7 +222,7 @@ nav .right a span {
 
 .card p, .card ul {
     font-size: 1rem;
-    color: var(--background-color);
+    color: var (--background-color);
 }
 
 .card a.download-cv-button {
@@ -286,6 +289,63 @@ nav .right a span {
     font-size: 18px;
     color: var(--link-color)
 }
+.languages-section p {
+    color: var(--link-color);
+}
+/* Circular Progress Section */
+.progress-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.progress-section h2 {
+    font-size: 35px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.progress-cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.progress-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.circular-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4caf50 calc(var(--progress) * 1%), 
+        #e0e0e0 0
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: var(--background-color);
+    padding: 5px;
+}
+
+.progress-cell span {
+    font-size: 18px;
+    color: var(--link-color);
+}
 
 /* SECTION 4 - PROJECTS SECTION */
 .projects-section {
@@ -295,7 +355,7 @@ nav .right a span {
 }
 
 .projects-section h2 {
-    font-size: 2rem;
+    font-size: 35px;
     margin-bottom: 30px;
 }
 
@@ -390,6 +450,57 @@ a.project-button {
     background-color: var(--text-color);
 }
 
+/* SECTION 5 SERVICES SECTION */
+.services-section {
+    padding: 50px 20px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Spread cards evenly */
+    gap: 30px; /* Increase spacing between cards */
+}
+
+.service-card {
+    background: var(--text-color);
+    border-radius: 10px;
+    padding: 30px; /* Increase padding for more content space */
+    width: calc(33% - 40px); /* Make cards occupy one-third of the row with spacing */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    color: var(--background-color);
+    margin-bottom: 20px;
+    font-size: 3rem; /* Increase icon size */
+}
+
+.service-card h3 {
+    font-size: 1.8rem; /* Increase heading size */
+    margin-bottom: 15px;
+    color: var(--background-color);
+}
+
+.service-card p {
+    font-size: 1.2rem; /* Increase text size */
+    color: var(--background-color);
+}
 
 /*SECTION 6: CONTACT SECTION*/
 .contact-section {
@@ -459,59 +570,37 @@ a.project-button {
     filter: brightness(.9);
 }
 
-/* Circular Progress Section */
-.progress-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
+#typing-text::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+footer {
     text-align: center;
-}
-
-.progress-section h2 {
-    font-size: 35px;
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
-
-.progress-cells {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.progress-cell {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.circular-progress {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: conic-gradient(
-        #4caf50 calc(var(--progress) * 1%), 
-        #e0e0e0 0
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circular-progress img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: contain;
+    padding: 10px;
     background-color: var(--background-color);
-    padding: 5px;
+    font-size: 20px;
+    color: var(--text-color);
 }
 
-.progress-cell span {
-    font-size: 18px;
-    color: var(--link-color);
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .service-card {
+        width: calc(50% - 30px); /* Make cards occupy half the row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* Make cards occupy full width on small screens */
+    }
 }
 
 @media(max-width: 850px){
@@ -585,12 +674,5 @@ a.project-button {
     .contact-section{
         padding: 0 20px;
     }
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--background-color);
-    font-size: 20px;
 }
 

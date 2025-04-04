@@ -40,7 +40,7 @@
     <section class="hero-section">
         <div class="text">
             <h2>Hello, I am Sidney</h2>
-            <h3>AI|ML|Data Science|Python Enthusiast</h3>
+            <h3>I love <span id="typing-text"></span></h3>
             <p>Welcome to my corner of the web—a space where creativity meets code. Here, 
                 you’ll find a showcase of my latest projects, a glimpse into my problem-solving 
                 mindset, and insights into the world of technology that inspire me. Whether 
@@ -223,7 +223,32 @@
     </div>
 </section>
 
-    
+<!--SECTION 5 - SERVICES OFFERED SECTION-->
+<section id="services" class="services-section">
+    <h2>Services Offered</h2>
+    <div class="services-cards">
+        <!-- Service 1: Web Development -->
+        <div class="service-card">
+            <i class="fa-solid fa-laptop-code fa-3x"></i>
+            <h3>Web Development</h3>
+            <p>I create responsive, user-friendly websites tailored to your needs, ensuring a seamless online presence.</p>
+        </div>
+
+        <!-- Service 2: Basic Graphic Design -->
+        <div class="service-card">
+            <i class="fa-solid fa-palette fa-3x"></i>
+            <h3>Basic Graphic Design</h3>
+            <p>From logos to social media graphics, I design visually appealing content to enhance your brand identity.</p>
+        </div>
+
+        <!-- Service 3: Virtual Assistance -->
+        <div class="service-card">
+            <i class="fa-solid fa-headset fa-3x"></i>
+            <h3>Virtual Assistance</h3>
+            <p>Offering administrative support, email management, and scheduling to help you stay organized and productive.</p>
+        </div>
+    </div>
+</section>
 
     <!--SECTION 6 - CONTACT SECTION-->
     <section id="contact" class="contact-section">
@@ -263,5 +288,40 @@
        // Dynamically set the current year
        document.getElementById('current-year').textContent = new Date().getFullYear();
    </script>
+   <script>
+const words = ["Artificial Intelligence", "Machine Learning", "Data Science", "Python"];
+let wordIndex = 0;
+let charIndex = 0;
+const typingSpeed = 200; // Speed of typing each character
+const erasingSpeed = 200; // Speed of erasing each character
+const delayBetweenWords = 2000; // Delay before switching to the next word
+const typingTextElement = document.getElementById("typing-text");
+
+function typeWord() {
+    if (charIndex < words[wordIndex].length) {
+        typingTextElement.textContent += words[wordIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWord, typingSpeed);
+    } else {
+        setTimeout(eraseWord, delayBetweenWords);
+    }
+}
+
+function eraseWord() {
+    if (charIndex > 0) {
+        typingTextElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseWord, erasingSpeed);
+    } else {
+        wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+        setTimeout(typeWord, typingSpeed);
+    }
+}
+
+// Start the typing effect
+document.addEventListener("DOMContentLoaded", () => {
+    typeWord();
+});
+</script>
 </body>
 </html>
