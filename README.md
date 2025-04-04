@@ -9,6 +9,7 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 - [Technologies Used](#technologies-used)
 - [File Structure](#file-structure)
 - [How to Run Locally](#how-to-run-locally)
+- [Live Demo](#live-demo)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
@@ -64,7 +65,7 @@ assets/
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/mathncode-sid/sidney-portfolio-website.git/
    ```
 2. Navigate to the project directory:
    ```bash
@@ -74,6 +75,10 @@ assets/
 4. Install the Live Server extension if not already installed.
 5. Start the Live Server by right-clicking on `index.html` and selecting "Open with Live Server".
 6. The website will open in your default browser.
+
+## Live Demo
+
+You can view the live version of this portfolio https://math-n-code-sid.netlify.app/
 
 ## Acknowledgments
 
