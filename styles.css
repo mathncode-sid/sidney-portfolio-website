@@ -124,6 +124,21 @@ nav .right a span {
 .hero-section p {
     color: var(--link-color);
 }
+.animated-logo {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* SECTION 2 - ABOUT ME SECTION */
 .about-me-section {
