@@ -212,6 +212,7 @@ nav .right a span {
     width: 300px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--background-color)
 }
 
 .card h3 {
@@ -222,7 +223,6 @@ nav .right a span {
 
 .card p, .card ul {
     font-size: 1rem;
-    color: var (--background-color);
 }
 
 .card a.download-cv-button {
@@ -362,13 +362,13 @@ nav .right a span {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    justify-content: center; /* Center the cards */
+    gap: 40px; /* Maintain spacing between cards */
 }
 
 .project-card {
-    width: 400px; 
-    padding: 2rem;
+    width: 600px; /* Increase the width of the cards */
+    padding: 3rem; /* Add more padding for a larger appearance */
     background-color: var(--text-color);
     border: 1px solid var(--text-color);
     border-radius: 10px; 
@@ -447,7 +447,7 @@ a.project-button {
 }
 
 .project-button:hover {
-    background-color: var(--text-color);
+    background-color: #0056b3
 }
 
 /* SECTION 5 SERVICES SECTION */
