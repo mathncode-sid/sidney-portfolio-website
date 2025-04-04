@@ -145,7 +145,7 @@ nav .right a span {
     padding: 50px;
     background-color: var(--background-color);
     color: var(--link-color);
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .about-me-section h2 {
@@ -224,7 +224,7 @@ nav .right a span {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 400px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: var(--background-color)
@@ -367,6 +367,7 @@ nav .right a span {
     padding: 50px 20px;
     background-color: var(--background-color);
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .projects-section h2 {
@@ -470,6 +471,7 @@ a.project-button {
     padding: 50px 20px;
     background-color: var(--background-color);
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .services-section h2 {
@@ -514,6 +516,24 @@ a.project-button {
 
 .service-card p {
     font-size: 1.2rem; /* Increase text size */
+    color: var(--background-color);
+}
+
+.portfolio-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: var(--link-color);
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: var(--text-color);
     color: var(--background-color);
 }
 
