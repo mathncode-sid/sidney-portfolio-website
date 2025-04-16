@@ -90,6 +90,7 @@ Feel free to reach out to me via the contact form on the website or through the 
 
 - **GitHub**: [mathncode-sid](https://github.com/mathncode-sid)
 - **LinkedIn**: [Sidney Muriuki](https://www.linkedin.com/in/sidney-muriuki-688207285/)
+<!-- GitAds-Verify: HN1RB2XQIJKBZLJMO597XV777V3GTVZQ -->
 - **Email**: [sidneybarakamuriuki1@gmail.com](mailto:sidneybarakamuriuki1@gmail.com)
 
 ---
