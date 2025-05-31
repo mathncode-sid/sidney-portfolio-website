@@ -611,6 +611,8 @@ a.project-button {
     animation: blink 0.7s steps(2, start) infinite;
 }
 
+
+
 @keyframes blink {
     50% {
         opacity: 0;
@@ -624,6 +626,8 @@ footer {
     font-size: 20px;
     color: var(--text-color);
 }
+
+
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 1024px) {
