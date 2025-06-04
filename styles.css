@@ -519,24 +519,6 @@ a.project-button {
     color: var(--background-color);
 }
 
-.portfolio-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: var(--background-color);
-    color: var(--link-color);
-    border: 2px solid var(--text-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.portfolio-button:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
-}
-
 /*SECTION 6: CONTACT SECTION*/
 .contact-section {
     padding: 0 50px;
