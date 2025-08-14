@@ -307,62 +307,9 @@ nav .right a span {
 .languages-section p {
     color: var(--link-color);
 }
-/* Circular Progress Section */
-.progress-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
-    text-align: center;
-}
 
-.progress-section h2 {
-    font-size: 35px;
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
 
-.progress-cells {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.progress-cell {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.circular-progress {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: conic-gradient(
-        #4caf50 calc(var(--progress) * 1%), 
-        #e0e0e0 0
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circular-progress img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: contain;
-    background-color: var(--background-color);
-    padding: 5px;
-}
-
-.progress-cell span {
-    font-size: 18px;
-    color: var(--link-color);
-}
-
-/* SECTION 4 - PROJECTS SECTION */
+/* SECTION 3 - PROJECTS SECTION */
 .projects-section {
     padding: 50px 20px;
     background-color: var(--background-color);
@@ -466,7 +413,7 @@ a.project-button {
     background-color: #0056b3
 }
 
-/* SECTION 5 SERVICES SECTION */
+/* SECTION 4 SERVICES SECTION */
 .services-section {
     padding: 50px 20px;
     background-color: var(--background-color);
@@ -519,7 +466,7 @@ a.project-button {
     color: var(--background-color);
 }
 
-/*SECTION 6: CONTACT SECTION*/
+/*SECTION 5: CONTACT SECTION*/
 .contact-section {
     padding: 0 50px;
     margin-bottom: 150px;
