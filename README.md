@@ -78,7 +78,7 @@ assets/
 
 ## Live Demo
 
-You can view the live version of this portfolio https://math-n-code-sid.netlify.app/
+You can view the live version of this portfolio https://math-n-code-sid.tech/
 
 ## Acknowledgments
 
