@@ -8,7 +8,6 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [File Structure](#file-structure)
-- [How to Run Locally](#how-to-run-locally)
 - [Live Demo](#live-demo)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
@@ -61,20 +60,6 @@ assets/
 - **assets/**: A folder containing images and the downloadable CV.
 - **.vscode/settings.json**: Configuration for the Live Server extension.
 
-## How to Run Locally
-
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/mathncode-sid/sidney-portfolio-website.git/
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd sidney-portfolio-website
-   ```
-3. Open the project in Visual Studio Code.
-4. Install the Live Server extension if not already installed.
-5. Start the Live Server by right-clicking on `index.html` and selecting "Open with Live Server".
-6. The website will open in your default browser.
 
 ## Live Demo
 
@@ -90,7 +75,6 @@ Feel free to reach out to me via the contact form on the website or through the 
 
 - **GitHub**: [mathncode-sid](https://github.com/mathncode-sid)
 - **LinkedIn**: [Sidney Muriuki](https://www.linkedin.com/in/sidney-muriuki-688207285/)
-<!-- GitAds-Verify: HN1RB2XQIJKBZLJMO597XV777V3GTVZQ -->
 - **Email**: [sidneybarakamuriuki1@gmail.com](mailto:sidneybarakamuriuki1@gmail.com)
 
 ---
