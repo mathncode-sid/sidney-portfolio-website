@@ -328,6 +328,8 @@ nav .right a span {
   overflow: hidden;
   max-width: 900px;
   margin: 0 auto;
+    /* Allow vertical page scrolling while enabling horizontal gesture detection */
+    touch-action: pan-y;
 }
 
 /* Each slide */

@@ -110,6 +110,7 @@ if (carouselRegion) {
 let pointerDown = false;
 let startX = 0;
 let threshold = 40; // px to consider swipe
+let isScrolling = undefined;
 if (carouselRegion) {
   carouselRegion.addEventListener('pointerdown', (e) => {
     pointerDown = true;
@@ -132,4 +133,43 @@ if (carouselRegion) {
   });
   // Cancel on leaving pointer capture
   carouselRegion.addEventListener('pointercancel', () => { pointerDown = false; });
+
+  // Touch events fallback for devices that prefer touch events
+  let touchStartX = 0;
+  let touchStartY = 0;
+  carouselRegion.addEventListener('touchstart', (e) => {
+    if (!e.touches || e.touches.length > 1) return; // ignore multi-touch
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    isScrolling = undefined;
+  }, { passive: true });
+
+  carouselRegion.addEventListener('touchmove', (e) => {
+    if (!e.touches || e.touches.length > 1) return;
+    const dx = e.touches[0].clientX - touchStartX;
+    const dy = e.touches[0].clientY - touchStartY;
+    if (typeof isScrolling === 'undefined') {
+      isScrolling = Math.abs(dx) < Math.abs(dy);
+    }
+    // if it's primarily horizontal swipe, prevent the page from scrolling while user is swiping
+    if (!isScrolling) {
+      // only prevent default if horizontal threshold exceeded slightly to allow small scrolls
+      if (Math.abs(dx) > 10) e.preventDefault();
+    }
+  }, { passive: false });
+
+  carouselRegion.addEventListener('touchend', (e) => {
+    // use changedTouches to get last position
+    const touch = e.changedTouches && e.changedTouches[0];
+    if (!touch) return;
+    const dx = touch.clientX - touchStartX;
+    if (Math.abs(dx) > threshold) {
+      if (dx > 0) {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      } else {
+        currentIndex = (currentIndex + 1) % slides.length;
+      }
+      showSlide(currentIndex);
+    }
+  }, { passive: true });
 }
