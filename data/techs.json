@@ -18,6 +18,15 @@
     "projects": [{ "title": "Takeaway", "href": "https://takeaway-ruby.vercel.app/" }]
   },
   {
+    "id": "js",
+    "name": "JavaScript",
+  "img": "./assets/js.webp",
+    "level": 60,
+    "badge": "Daily use",
+    "desc": "Vanilla JS for interactivity & DOM manipulation",
+    "projects": [{ "title": "Takeaway", "href": "https://takeaway-ruby.vercel.app/" }]
+  },
+  {
     "id": "sql",
     "name": "SQL",
   "img": "./assets/mysqllogo.webp",
