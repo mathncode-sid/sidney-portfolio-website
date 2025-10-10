@@ -121,41 +121,20 @@
     <!--SECTION 3 - PROGRAMMING LANGUAGES SECTION-->
     <section id="prog-languages" class="languages-section">
         <h2>Tools and Technologies</h2>
-        <div class="cells">
-            <div class="cell">
-                <img src="./assets/html5-logo.webp" alt="html5">
-                <span>HTML</span>
 
-            </div>
+        <!-- Auto-generated technology list (populated by script.js) -->
+        <ul id="tech-list" class="tech-list" role="list" aria-label="Tools and technologies list">
+            <!-- JS will populate tech items here -->
+        </ul>
 
-            <div class="cells">
-                <div class="cell">
-                    <img src="./assets/css-logo.webp" alt="css">
-                    <span>CSS</span>
-                </div>
-
-            <div class="cells">
-                <div class="cell">
-                    <img src="./assets/mysqllogo.webp" alt="sql">
-                    <span>SQL</span>
-                </div>
-            
-            <div class="cells">
-                <div class="cell">
-                    <img src="./assets/pythonlogo.webp" alt="python">
-                    <span>Python</span>
-                </div>
-            
-            <div class="cells">
-                <div class="cell">
-                    <img src="./assets/logo_n8n.webp" alt="n8n">
-                    <span>n8n</span>
-                </div>
-            <div class="cells">
-                <div class="cell">
-                    <img src="./assets/chainlit-logo.webp" alt="Chainlit">
-                    <span>Chainlit</span>
-                </div>
+        <!-- Modal for showing projects / details for a technology -->
+        <div id="tech-modal" class="tech-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="tech-modal-title">
+            <div class="tech-modal-backdrop" data-action="close"></div>
+            <div class="tech-modal-panel" role="document">
+                <button class="tech-modal-close" aria-label="Close" data-action="close">×</button>
+                <h3 id="tech-modal-title"></h3>
+                <p id="tech-modal-desc"></p>
+                <div id="tech-modal-projects" class="tech-modal-projects"></div>
             </div>
         </div>
     </section>

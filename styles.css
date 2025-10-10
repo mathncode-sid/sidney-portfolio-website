@@ -267,6 +267,8 @@ nav .right a span {
 .languages-section {
     padding: 0 50px;
     margin-bottom: 200px;
+    /* make background match the rest of the site for a seamless look */
+    background-color: var(--background-color);
 }
 
 .languages-section h2 {
@@ -274,38 +276,154 @@ nav .right a span {
     font-size: 35px;
 }
 
-.languages-section .cells {
+/* New tech list layout */
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding: 24px 0;
+    margin: 0;
+    align-items: start;
+}
+
+.tech-item {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 12px;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.languages-section .cells .cell {
-    display:flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
-    width: 200 px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid var(--text-color);
-    border-radius: 5px;
-    gap: 20px;
+    text-align: center;
+    transition: transform .18s ease, box-shadow .18s ease;
 }
 
-.languages-section .cells .cell img{
-    width: 100px;
-    height: 100px;
+.tech-link {
+    display: block;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+.tech-item:focus-within, .tech-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.tech-figure {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.tech-figure img {
+    width: 64px;
+    height: 64px;
     object-fit: contain;
-    border-radius: 2px;
-
+    display:block;
 }
 
-.languages-section .cells .cell span{
-    font-size: 18px;
-    color: var(--link-color)
-}
-.languages-section p {
+.tech-label {
+    font-size: 16px;
     color: var(--link-color);
+    font-weight: 600;
+}
+
+/* small badge for years / last used */
+.tech-badge {
+    background: linear-gradient(90deg, rgba(16,228,235,0.12), rgba(16,228,235,0.06));
+    color: var(--text-color);
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* Skill meter */
+.skill-meter {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    height: 8px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.skill-fill {
+    height: 100%;
+    width: 0%; /* animated by JS */
+    background: linear-gradient(90deg, #4f46e5, #06b6d4);
+    border-radius: 999px;
+    transition: width 800ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* Modal */
+.tech-modal[aria-hidden="true"] { display: none; }
+.tech-modal { position: fixed; inset: 0; z-index: 1200; }
+.tech-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+.tech-modal-panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(720px, 92vw);
+    background: #07121a;
+    border-radius: 12px;
+    padding: 20px;
+    color: var(--link-color);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+.tech-modal-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    color: var(--link-color);
+    font-size: 26px;
+    cursor: pointer;
+}
+.tech-modal-projects { margin-top: 12px; display: grid; gap: 10px; }
+.tech-modal-projects a { display:block; color: var(--text-color); text-decoration: none; }
+
+/* reveal animation helper */
+.reveal { opacity: 0; transform: translateY(10px); transition: opacity 420ms ease, transform 420ms ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media(max-width: 860px){
+    .languages-section { padding: 0 20px; }
+    .tech-figure img { width: 56px; height: 56px; }
+}
+
+/* Larger layout tweaks for big screens */
+@media (min-width: 1200px) {
+    .tech-list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+    }
+    .tech-item {
+        padding: 18px;
+    }
+    .tech-figure img {
+        width: 88px;
+        height: 88px;
+    }
+    .tech-label { font-size: 18px; }
+    .skill-meter { height: 10px; }
+}
+
+@media (min-width: 1400px) {
+    .tech-list {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 28px;
+    }
+    .tech-figure img {
+        width: 96px;
+        height: 96px;
+    }
+    .tech-label { font-size: 19px; }
 }
 
 
