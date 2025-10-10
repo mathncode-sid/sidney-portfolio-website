@@ -44,7 +44,9 @@ const prevBtn = document.querySelector(".carousel-control.prev");
 const nextBtn = document.querySelector(".carousel-control.next");
 const carouselRegion = document.querySelector('.carousel');
 const carouselStatus = document.getElementById('carousel-status');
+const dotsContainer = document.querySelector('.carousel-dots');
 let currentIndex = 0;
+let dots = [];
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
@@ -55,6 +57,10 @@ function showSlide(index) {
   if (carouselStatus && active) {
     const title = active.getAttribute('data-title') || (`Slide ${index + 1}`);
     carouselStatus.textContent = `${title} (${index + 1} of ${slides.length})`;
+  }
+  // Update pagination dots
+  if (dots && dots.length) {
+    dots.forEach((d, i) => d.classList.toggle('active', i === index));
   }
 }
 
@@ -71,6 +77,29 @@ if (nextBtn) {
     showSlide(currentIndex);
   });
 }
+
+// Create pagination dots dynamically
+function createDots() {
+  if (!dotsContainer) return;
+  dotsContainer.innerHTML = '';
+  dots = Array.from({ length: slides.length }, (_, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'carousel-dot';
+    btn.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    btn.addEventListener('click', () => {
+      currentIndex = i;
+      showSlide(currentIndex);
+    });
+    dotsContainer.appendChild(btn);
+    return btn;
+  });
+}
+
+// Initialize dots on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  createDots();
+  showSlide(currentIndex); // ensure dots are in sync
+});
 
 // Keyboard navigation: Left/Right arrows, Home, End
 if (carouselRegion) {

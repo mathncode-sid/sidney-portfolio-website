@@ -448,6 +448,38 @@ nav .right a span {
   right: 10px;
 }
 
+/* Pagination dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: var(--text-color);
+}
+
+/* On small screens hide the large arrow controls and show dots for navigation */
+@media (max-width: 860px) {
+    .carousel-control {
+        display: none;
+    }
+    .carousel-dots {
+        display: flex;
+    }
+}
+
 
 /* SECTION 4 SERVICES SECTION */
 .services-section {
