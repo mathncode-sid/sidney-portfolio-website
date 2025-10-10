@@ -34,26 +34,102 @@ function eraseWord() {
 // Start the typing effect
 document.addEventListener("DOMContentLoaded", () => {
     typeWord();
+  // Initialize carousel to ensure a single active slide on first load
+  showSlide(currentIndex);
 });
 
 // Simple carousel script
 const slides = document.querySelectorAll(".project-slide");
 const prevBtn = document.querySelector(".carousel-control.prev");
 const nextBtn = document.querySelector(".carousel-control.next");
+const carouselRegion = document.querySelector('.carousel');
+const carouselStatus = document.getElementById('carousel-status');
 let currentIndex = 0;
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.toggle("active", i === index);
   });
+  // Update live region for screen readers with the slide title if available
+  const active = slides[index];
+  if (carouselStatus && active) {
+    const title = active.getAttribute('data-title') || (`Slide ${index + 1}`);
+    carouselStatus.textContent = `${title} (${index + 1} of ${slides.length})`;
+  }
 }
 
-prevBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(currentIndex);
-});
+if (prevBtn) {
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+}
 
-nextBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-});
+if (nextBtn) {
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
+}
+
+// Keyboard navigation: Left/Right arrows, Home, End
+if (carouselRegion) {
+  carouselRegion.addEventListener('keydown', (e) => {
+    switch (e.key) {
+      case 'ArrowLeft':
+        e.preventDefault();
+        if (slides.length) {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
+        }
+        break;
+      case 'ArrowRight':
+        e.preventDefault();
+        if (slides.length) {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        }
+        break;
+      case 'Home':
+        e.preventDefault();
+        currentIndex = 0;
+        showSlide(currentIndex);
+        break;
+      case 'End':
+        e.preventDefault();
+        currentIndex = slides.length - 1;
+        showSlide(currentIndex);
+        break;
+      default:
+        break;
+    }
+  });
+}
+
+// Touch / pointer swipe support
+let pointerDown = false;
+let startX = 0;
+let threshold = 40; // px to consider swipe
+if (carouselRegion) {
+  carouselRegion.addEventListener('pointerdown', (e) => {
+    pointerDown = true;
+    startX = e.clientX;
+  });
+  carouselRegion.addEventListener('pointerup', (e) => {
+    if (!pointerDown) return;
+    pointerDown = false;
+    const dx = e.clientX - startX;
+    if (Math.abs(dx) > threshold) {
+      if (dx > 0) {
+        // swipe right -> previous
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      } else {
+        // swipe left -> next
+        currentIndex = (currentIndex + 1) % slides.length;
+      }
+      showSlide(currentIndex);
+    }
+  });
+  // Cancel on leaving pointer capture
+  carouselRegion.addEventListener('pointercancel', () => { pointerDown = false; });
+}

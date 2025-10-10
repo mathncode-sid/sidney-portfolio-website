@@ -165,9 +165,9 @@
 <section id="projects" class="projects-section">
   <h2>Projects</h2>
   
-  <div class="carousel">
+    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Projects carousel" tabindex="0">
     <!-- Project 1 -->
-    <div class="project-slide active">
+        <div class="project-slide active" data-title="Job Fit Alchemist">
       <img src="/assets/job-fit-alchemist.png" alt="job-fit-alchemist" class="project-image">
       <div class="project-details">
         <h3>Job Fit Alchemist</h3>
@@ -187,7 +187,7 @@
     </div>
 
     <!-- Project 2 -->
-    <div class="project-slide active">
+        <div class="project-slide" data-title="Takeaway">
       <img src="/assets/takeaway.png" alt="takeaway" class="project-image">
       <div class="project-details">
         <h3>Takeaway</h3>
@@ -206,9 +206,12 @@
       </div>
     </div>
 
-  <!-- Carousel controls -->
-  <button class="carousel-control prev">&#10094;</button>
-  <button class="carousel-control next">&#10095;</button>
+    <!-- Live region for accessibility announcements -->
+    <div id="carousel-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Carousel controls -->
+    <button type="button" class="carousel-control prev" aria-label="Previous project" tabindex="0">&#10094;</button>
+    <button type="button" class="carousel-control next" aria-label="Next project" tabindex="0">&#10095;</button>
 </section>
 
 

@@ -332,14 +332,20 @@ nav .right a span {
 
 /* Each slide */
 .project-slide {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* prepare for fade/slide transition */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 360ms ease, transform 360ms ease;
 }
 
 .project-slide.active {
-  display: flex;
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Project screenshot */
@@ -415,7 +421,21 @@ nav .right a span {
 }
 
 .carousel-control:hover {
-  background: #444;
+    background: #444;
+    transform: scale(1.06);
+}
+
+/* Visually hidden helper for screen readers */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
 .carousel-control.prev {
