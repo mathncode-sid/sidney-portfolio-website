@@ -98,6 +98,14 @@ function createDots() {
 // Initialize dots on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   createDots();
+  // Show dots only on small screens (match CSS breakpoint)
+  if (dotsContainer) {
+    const shouldShow = window.innerWidth <= 860;
+    dotsContainer.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+    // ensure visible style is applied if small screen
+    if (shouldShow) dotsContainer.style.display = '';
+    else dotsContainer.style.display = 'none';
+  }
   showSlide(currentIndex); // ensure dots are in sync
 });
 

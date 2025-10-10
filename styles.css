@@ -450,7 +450,7 @@ nav .right a span {
 
 /* Pagination dots */
 .carousel-dots {
-    display: flex;
+    display: none; /* hidden on large screens, shown on small via media query */
     justify-content: center;
     gap: 8px;
     margin-top: 12px;
