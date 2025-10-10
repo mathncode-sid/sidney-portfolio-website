@@ -109,6 +109,26 @@ document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentIndex); // ensure dots are in sync
 });
 
+// Debounce helper to avoid running resize logic too frequently
+function debounce(fn, wait) {
+  let t;
+  return function (...args) {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), wait);
+  };
+}
+
+// Update dots visibility on resize (keeps UI in sync when rotating/resizing)
+const handleResize = debounce(() => {
+  if (!dotsContainer) return;
+  const shouldShow = window.innerWidth <= 860;
+  dotsContainer.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+  if (shouldShow) dotsContainer.style.display = '';
+  else dotsContainer.style.display = 'none';
+}, 150);
+
+window.addEventListener('resize', handleResize);
+
 // Keyboard navigation: Left/Right arrows, Home, End
 if (carouselRegion) {
   carouselRegion.addEventListener('keydown', (e) => {
