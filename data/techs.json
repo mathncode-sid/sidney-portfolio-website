@@ -1,0 +1,56 @@
+[
+  {
+    "id": "html",
+    "name": "HTML",
+  "img": "./assets/html5-logo.webp",
+    "level": 90,
+    "badge": "Daily use",
+    "desc": "Semantic HTML5 for accessible layouts",
+    "projects": [{ "title": "Takeaway", "href": "https://takeaway-ruby.vercel.app/" }]
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+  "img": "./assets/css-logo.webp",
+    "level": 85,
+    "badge": "Daily use",
+    "desc": "Responsive styling with Flexbox & Grid",
+    "projects": [{ "title": "Takeaway", "href": "https://takeaway-ruby.vercel.app/" }]
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+  "img": "./assets/mysqllogo.webp",
+    "level": 70,
+    "badge": "Used 2025",
+    "desc": "Relational databases and queries (MySQL)",
+    "projects": []
+  },
+  {
+    "id": "python",
+    "name": "Python",
+  "img": "./assets/pythonlogo.webp",
+    "level": 88,
+    "badge": "Daily use",
+    "desc": "Python for data, ML, and scripting",
+    "projects": [{ "title": "Job Fit Alchemist", "href": "https://job-fit-alchemist.vercel.app/" }]
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+  "img": "./assets/logo_n8n.webp",
+    "level": 60,
+    "badge": "Automation",
+    "desc": "Workflow automation using n8n",
+    "projects": []
+  },
+  {
+    "id": "chainlit",
+    "name": "Chainlit",
+  "img": "./assets/chainlit-logo.webp",
+    "level": 50,
+    "badge": "AI tooling",
+    "desc": "Chat UI for LLM based demos",
+    "projects": []
+  }
+]
