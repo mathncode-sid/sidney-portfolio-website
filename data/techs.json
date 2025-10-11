@@ -61,5 +61,14 @@
     "badge": "AI tooling",
     "desc": "Chat UI for LLM based demos",
     "projects": []
+  },
+  {
+    "id": "docsify",
+    "name": "Docsify",
+  "img": "./assets/docsify.webp",
+    "level": 70,
+    "badge": "Documentation",
+    "desc": "Docsify for creating documentation sites for learning resources",
+    "projects": [{ "title": "Learn PostgreSQL", "href": "https://fahimahammed.github.io/learn-postgresql/#/" }]
   }
 ]
