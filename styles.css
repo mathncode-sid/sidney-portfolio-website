@@ -330,7 +330,7 @@ nav .right a span {
 
 .tech-label {
     font-size: 16px;
-    color: var(--link-color);
+    color: var(--text-color);
     font-weight: 600;
 }
 
