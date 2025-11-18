@@ -219,47 +219,152 @@ nav .right a span {
 }
 
 .card {
-    background-color: var(--text-color);
-    border: 1px solid var(--text-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 400px;
+    background: linear-gradient(135deg, rgba(16,228,235,0.12) 0%, rgba(16,228,235,0.04) 100%);
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(16, 228, 235, 0.1);
+    padding: 30px;
+    width: 380px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: var(--background-color)
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: var(--link-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(16,228,235,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.card:hover::before {
+    left: 100%;
 }
 
 .card h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: var(--background-color);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
 }
 
 .card p, .card ul {
     font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card ul li {
+    margin: 12px 0;
+    padding: 8px;
+    background: rgba(16,228,235,0.06);
+    border-left: 3px solid var(--text-color);
+    border-radius: 5px;
+    padding-left: 12px;
 }
 
 .card a.download-cv-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: var(--background-color);
-    color: var(--link-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, var(--text-color) 0%, #00d4ff 100%);
+    color: var(--background-color);
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .card a.download-cv-button:hover {
-    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(16, 228, 235, 0.3);
+}
+
+.card a.download-cv-button:active {
+    transform: scale(0.98);
+}
+
+/* Experience items styling */
+.experience-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(16,228,235,0.08);
+    border-radius: 10px;
+    border: 1px solid rgba(16,228,235,0.2);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.experience-item:hover {
+    background: rgba(16,228,235,0.15);
+    border-color: var(--text-color);
+    transform: translateX(5px);
+}
+
+.experience-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.05);
+    padding: 4px;
+}
+
+.experience-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.experience-details strong {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.experience-details p {
+    font-size: 0.85rem;
+    color: #a0a9b8;
+    margin: 0;
 }
 
 /* Hover Animation */
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-12px);
+    box-shadow: 0 16px 32px rgba(16, 228, 235, 0.2);
+    border-color: #00d4ff;
 }
 
 
