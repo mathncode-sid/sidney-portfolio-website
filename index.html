@@ -138,7 +138,8 @@
 
     <!--SECTION 3 - TOOLS AND TECHNOLOGIES-->
     <section id="prog-languages" class="languages-section">
-        <h2>Tools and Technologies</h2>
+        <h2>Tools & Technologies</h2>
+        <p class="tech-subtitle">Skills and tools I work with daily</p>
 
         <!-- Auto-generated technology list (populated by script.js) -->
         <ul id="tech-list" class="tech-list" role="list" aria-label="Tools and technologies list">
@@ -149,8 +150,12 @@
         <div id="tech-modal" class="tech-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="tech-modal-title">
             <div class="tech-modal-backdrop" data-action="close"></div>
             <div class="tech-modal-panel" role="document">
-                <button class="tech-modal-close" aria-label="Close" data-action="close">×</button>
-                <h3 id="tech-modal-title"></h3>
+                <button class="tech-modal-close" aria-label="Close" data-action="close">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <div class="tech-modal-header">
+                    <h3 id="tech-modal-title"></h3>
+                </div>
                 <p id="tech-modal-desc"></p>
                 <div id="tech-modal-projects" class="tech-modal-projects"></div>
             </div>
@@ -160,80 +165,96 @@
 
 <!-- SECTION 3 - PROJECTS SECTION -->
 <section id="projects" class="projects-section">
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
+  <p class="projects-subtitle">Explore my latest work and contributions</p>
   
-    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Projects carousel" tabindex="0">
+  <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Projects carousel" tabindex="0">
     <!-- Project 1 -->
-        <div class="project-slide active" data-title="Job Fit Alchemist">
-      <img src="/assets/job-fit-alchemist.png" alt="job-fit-alchemist" class="project-image">
-      <div class="project-details">
-        <h3>Job Fit Alchemist</h3>
-        <p>
-        Job Fit Alchemist addresses the challenges job seekers face in writing strong applications, matching their skills to job requirements, and preparing for interviews. 
-        Built with TypeScript and Supabase, the platform provides AI-powered CV and cover letter analysis, job description matching, 
-        an interactive career advice chatbot, personalized skills roadmaps, and mock interview practice, delivering actionable insights and tailored guidance to help candidates improve their applications and boost their chances of success.
-        </p>
-
-        <div class="tags">
-          <span>Typescript</span>
-          <span>Supabase</span>
-          <span>AI</span>
+    <div class="project-slide active" data-title="Job Fit Alchemist">
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/assets/job-fit-alchemist.png" alt="job-fit-alchemist" class="project-image">
+          <div class="project-overlay">
+            <a href="https://job-fit-alchemist.vercel.app/" target="_blank" class="project-link">View Live</a>
+          </div>
         </div>
-        <a href="https://job-fit-alchemist.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+        <div class="project-details">
+          <h3>Job Fit Alchemist</h3>
+          <p>
+            AI-powered platform helping job seekers write strong applications, match skills to requirements, and prepare for interviews with CV analysis, skill roadmaps, and mock interviews.
+          </p>
+
+          <div class="tags">
+            <span class="tag-tech">TypeScript</span>
+            <span class="tag-tech">Supabase</span>
+            <span class="tag-tech">AI</span>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Project 2 -->
-        <div class="project-slide" data-title="Takeaway">
-      <img src="/assets/takeaway.png" alt="takeaway" class="project-image">
-      <div class="project-details">
-        <h3>Takeaway</h3>
-        <p>
-            Takeaway is a web platform built for the Meetings, Incentives, Collaborations, and Exhibitions (MICE) industry, designed to streamline the sharing of presentations and documents from event speakers to attendees. 
-            Whether someone joins an event late or misses a session, Takeaway ensures easy access to essential materials via shareable links. 
-            Developed primarily with JavaScript, the platform provides a centralized hub where event resources can be securely distributed, helping attendees stay informed and engaged throughout the event experience.
-        </p>
-
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
+    <div class="project-slide" data-title="Takeaway">
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/assets/takeaway.png" alt="takeaway" class="project-image">
+          <div class="project-overlay">
+            <a href="https://takeaway-ruby.vercel.app/" target="_blank" class="project-link">View Live</a>
+          </div>
         </div>
-        <a href="https://takeaway-ruby.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+        <div class="project-details">
+          <h3>Takeaway</h3>
+          <p>
+            Web platform for the MICE industry that streamlines sharing of presentations and documents from speakers to attendees with secure, shareable links.
+          </p>
+
+          <div class="tags">
+            <span class="tag-tech">HTML</span>
+            <span class="tag-tech">CSS</span>
+            <span class="tag-tech">JavaScript</span>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Project 3 -->
-        <div class="project-slide" data-title="Learn PostgreSQL">
-      <img src="/assets/learn-postgre-sql.png" alt="learn-postgresql" class="project-image">
-      <div class="project-details">
-        <h3>Learn PostgreSQL</h3>
-        <p>
-            Learn PostgreSQL is an open-source platform designed to teach users the fundamentals of PostgreSQL, a powerful open-source relational database management system. 
-            The platform offers a hands-on learning experience through a series of lessons, quizzes, and practical exercises that cover key concepts such as database design, SQL querying, data manipulation, and performance optimization. 
-            Built with Docsify and Markdown, Learn PostgreSQL provides an accessible and user-friendly interface that allows learners to progress at their own pace, making it an ideal resource for beginners and those looking to enhance their database skills.
-            I contributed to this open-source project by adding the web viewer through Docsify and creating content using Markdown.
-        </p>
+    <div class="project-slide" data-title="Learn PostgreSQL">
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/assets/learn-postgre-sql.png" alt="learn-postgresql" class="project-image">
+          <div class="project-overlay">
+            <a href="https://fahimahammed.github.io/learn-postgresql/#/" target="_blank" class="project-link">View Live</a>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3>Learn PostgreSQL</h3>
+          <p>
+            Open-source learning platform teaching PostgreSQL fundamentals through hands-on lessons, quizzes, and exercises. I contributed by adding Docsify viewer and creating Markdown content.
+          </p>
 
-        <div class="tags">
-          <span>Docsify</span>
-          <span>Markdown</span>
-          <span>HTML</span>
-          <span>open-source</span>
+          <div class="tags">
+            <span class="tag-tech">Docsify</span>
+            <span class="tag-tech">Markdown</span>
+            <span class="tag-open-source">Open-source</span>
+          </div>
         </div>
-        <a href="https://fahimahammed.github.io/learn-postgresql/#/" target="_blank" class="project-link">Live Demo</a>
-        </div>
+      </div>
     </div>
 
     <!-- Live region for accessibility announcements -->
     <div id="carousel-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
     <!-- Carousel controls -->
-    <button type="button" class="carousel-control prev" aria-label="Previous project" tabindex="0">&#10094;</button>
-    <button type="button" class="carousel-control next" aria-label="Next project" tabindex="0">&#10095;</button>
+    <button type="button" class="carousel-control prev" aria-label="Previous project" tabindex="0">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" class="carousel-control next" aria-label="Next project" tabindex="0">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
   
     <!-- Pagination dots (generated dynamically) -->
     <div class="carousel-dots" aria-hidden="true"></div>
+  </div>
 </section>
 
 
@@ -243,31 +264,53 @@
     <div class="services-cards">
         <!-- Service 1: Web Development -->
         <div class="service-card">
-            <i class="fa-solid fa-laptop-code fa-3x"></i>
+            <div class="service-icon-wrapper">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
             <h3>Web Development</h3>
             <p>
-                I craft responsive, user-focused websites that blend modern design with seamless functionality. Each site is tailored to reflect your brand, engage your audience, and deliver a compelling digital experience. From intuitive navigation to mobile optimization, I ensure all elements work together to boost engagement and build a strong online presence. Whether launching a new project or refreshing an existing one, I bring a strategic mix of design, development, and UX expertise to bring your vision to life.
+                I craft responsive, user-focused websites that blend modern design with seamless functionality. Each site is tailored to reflect your brand, engage your audience, and deliver a compelling digital experience.
             </p>
+            <div class="service-features">
+                <span class="feature-tag">Responsive Design</span>
+                <span class="feature-tag">React & Vue</span>
+                <span class="feature-tag">UI/UX Focus</span>
+            </div>
         </div>
 
         <!-- Service 2: Automation & Scripting -->
         <div class="service-card">
-            <i class="fa-solid fa-code fa-3x"></i>
+            <div class="service-icon-wrapper">
+                <i class="fa-solid fa-code"></i>
+            </div>
             <h3>Automation & Scripting</h3>
             <p>
-                Streamline your workflows and eliminate repetitive tasks with tailored automation solutions using Python. I develop custom scripts to enhance efficiency, accuracy, and scalability—handling everything from data scraping and API integrations to report generation and file processing. Each solution is built with clean, maintainable code to ensure long-term reliability and ease of use.
+                Streamline your workflows and eliminate repetitive tasks with tailored automation solutions using Python. I develop custom scripts to enhance efficiency, accuracy, and scalability.
             </p>
+            <div class="service-features">
+                <span class="feature-tag">Python Scripts</span>
+                <span class="feature-tag">API Integration</span>
+                <span class="feature-tag">Data Processing</span>
+            </div>
         </div>
 
-        <!-- Service 3: Virtual Assistance -->
+        <!-- Service 3: IT Support -->
         <div class="service-card">
-            <i class="fa-solid fa-headset fa-3x"></i>
+            <div class="service-icon-wrapper">
+                <i class="fa-solid fa-headset"></i>
+            </div>
             <h3>IT Support</h3>
             <p>
-                I provide dependable, solution-focused IT support to ensure your systems run smoothly. My services include troubleshooting hardware and software issues, system setup, network diagnostics, and remote assistance. With a strong emphasis on responsiveness and clear communication, I help minimize downtime and keep your tech environment efficient and secure.
+                I provide dependable, solution-focused IT support to ensure your systems run smoothly. My services include troubleshooting, system setup, network diagnostics, and remote assistance.
             </p>
+            <div class="service-features">
+                <span class="feature-tag">24/7 Support</span>
+                <span class="feature-tag">Troubleshooting</span>
+                <span class="feature-tag">System Setup</span>
+            </div>
         </div>
     </div>
+</section>
 </section>
 
     <!--SECTION 5 - CONTACT SECTION-->
@@ -275,28 +318,65 @@
         <h2>Contact</h2>
         <div class="group">
             <div class="text">
-                <p>I’d love to connect with you! Whether you have a project in mind, need assistance, or just want to network, feel free to reach out. I am always open to opportunities for collaboration and professional growth.</p>
+                <p>I'd love to connect with you! Whether you have a project in mind, need assistance, or just want to network, feel free to reach out. I am always open to opportunities for collaboration and professional growth.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:sidneybarakamuriuki1@gmail.com">sidneybarakamuriuki1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/mathncode-sid" target="_blank">github.com/mathncode-sid</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/sidney-muriuki-688207285/" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <label for="name">Name:</label>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                 <input type="hidden" name="access_key" value="ba831fe1-f32b-4932-b4e6-2cfeae9aca06">
-                <input type="text" name="name" placeholder="Enter your name" required>
+                
+                <div class="form-group">
+                    <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
 
-                <label for="email">Email Address:</label>
-                <input type="text" name="email" placeholder="Enter your email" required>
+                <div class="form-group">
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
 
-                <label for="reason">Reason for reaching out:</label>
-                <select name="reason" id="reason">
-                    <option value="" selected>Select the reason from the dropdown below</option>
-                    <option value="collaboration">Collaboration</option>
-                    <option value="job offer">Job Offer</option>
-                    <option value="other">Other</option>
-                </select>
+                <div class="form-group">
+                    <label for="reason"><i class="fa-solid fa-comments"></i> Reason for reaching out:</label>
+                    <select name="reason" id="reason" required>
+                        <option value="" selected>Select the reason from the dropdown below</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="job offer">Job Offer</option>
+                        <option value="question">Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-                <label for="message">Detailed message:</label>
-                <textarea name="message" id="message" placeholder="Enter your detailed message here"></textarea>
+                <div class="form-group">
+                    <label for="message"><i class="fa-solid fa-pen-to-square"></i> Detailed message:</label>
+                    <textarea name="message" id="message" placeholder="Enter your detailed message here" rows="5" required></textarea>
+                </div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
             </form>
         </div>
     </section>

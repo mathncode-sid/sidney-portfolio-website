@@ -192,7 +192,10 @@ function closeTechModal(){
 document.addEventListener('click', (e) => {
   const action = e.target && e.target.dataset && e.target.dataset.action;
   if (action === 'close') closeTechModal();
+  // Check if the button itself was clicked
   if (e.target && e.target.classList && e.target.classList.contains('tech-modal-close')) closeTechModal();
+  // Check if an icon inside the button was clicked
+  if (e.target && e.target.parentElement && e.target.parentElement.classList && e.target.parentElement.classList.contains('tech-modal-close')) closeTechModal();
 });
 
 // close with Escape
