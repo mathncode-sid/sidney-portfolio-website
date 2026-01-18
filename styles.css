@@ -1484,12 +1484,21 @@ footer {
     }
 
     .contact-section .group {
+        flex-direction: column;
         gap: 25px;
+    }
+
+    .contact-section .group .text {
+        display: none;
     }
 
     .contact-section .group .text p {
         font-size: 0.95rem;
         margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: none;
     }
 
     .contact-item {
@@ -1512,6 +1521,8 @@ footer {
     .contact-form {
         padding: 20px;
         gap: 15px;
+        flex: 1;
+        width: 100%;
     }
 
     .contact-section .group form input,
@@ -1519,11 +1530,13 @@ footer {
     .contact-section .group form textarea {
         padding: 10px 12px;
         font-size: 0.9rem;
+        width: 100%;
     }
 
     .submit-btn {
         height: 45px;
         font-size: 14px;
+        width: 100%;
     }
 }
 
