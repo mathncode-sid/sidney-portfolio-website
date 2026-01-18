@@ -1432,9 +1432,98 @@ footer {
         font-size: 20px;
     }
 
+    /*SECTION 4: SERVICES SECTION*/
+    .services-section {
+        padding: 30px 20px;
+        margin-bottom: 100px;
+    }
+
+    .services-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .services-cards {
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .service-icon-wrapper {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    .feature-tag {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
     /*SECTION 6: CONTACT SECTION*/
     .contact-section{
-        padding: 0 20px;
+        padding: 30px 20px;
+        margin-bottom: 100px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .contact-section .group {
+        gap: 25px;
+    }
+
+    .contact-section .group .text p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-item {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .contact-item i {
+        font-size: 20px;
+    }
+
+    .contact-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .contact-item a {
+        font-size: 0.85rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .contact-section .group form input,
+    .contact-section .group select,
+    .contact-section .group form textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        height: 45px;
+        font-size: 14px;
     }
 }
 
