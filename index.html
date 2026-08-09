@@ -1,388 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Welcome To My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sidney Muriuki — backend, data, automation, and community leadership.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sidney Muriuki | Backend, Data & Community</title>
 </head>
 <body>
-   <!--NAVBAR--> 
-   <nav>
-    <div class="left">
-        <a href="/" class="animated-logo">S.B</a>
-    </div>
-    <div class="right">
-        <a href="https://github.com/mathncode-sid" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i> 
-            <span>Github</span> 
-        </a>
-        <a href="https://www.linkedin.com/in/sidney-muriuki-688207285/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn</span>
-        </a>
-        <a href="http://mailto:sidneybarakamuriuki1@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Email</span>
-        </a>
-    </div>
-   </nav>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Sidney Muriuki, home">SM<span>.</span></a>
+      <div class="nav-links">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a class="social-icon" href="https://github.com/mathncode-sid" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/sidney-muriuki-688207285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="nav-cta" href="assets/sidney_muriuki_resume.pdf" download>Download CV <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </nav>
+  </header>
 
-   <main>
-    <!--SECTION 1 - HERO SECTION-->
-    <section class="hero-section">
-        <div class="text">
-            <h2>Hello, I am Sidney</h2>
-            <h3>Currently Learning <span id="typing-text"></span></h3>
-            <p>Welcome to my corner of the web—a space where creativity meets code. Here, 
-                you’ll find a showcase of my latest projects, a glimpse into my problem-solving 
-                mindset, and insights into the world of technology that inspire me. Whether 
-                you’re here to explore, collaborate, or simply see what I’m building, I’m excited 
-                to share my journey with you. Dive in, get inspired, and let’s connect on what’s 
-                possible in the world of tech.</p>
-
-            <div class="links">
-                <a href="#about-me">
-                    <i class="fa-solid fa-address-card"></i>
-                    <span>About Me</span>
-                </a>
-                <a href="#prog-languages">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Tools and Technologies</span>
-                </a>
-                <a href="#projects">
-                    <i class="fa-solid fa-diagram-project"></i>
-                    <span>Projects</span>
-                </a>
-                <a href="#services">
-                    <i class="fa-solid fa-bell-concierge"></i>
-                    <span>Services</span>
-                </a>
-                <a href="#contact">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Contact Me</span>
-                </a>
-            </div> 
-        </div>
-        <div class="headshot">
-          <img src="./assets/headshot.webp" alt="Sidney headshot">
-        </div>
-    </section>
-
-    <!--SECTION 2: ABOUT SECTION-->
-    <section id="about-me" class="about-me-section">
-        <h2>About Me</h2>
-        <div class="about-cards">
-            <div class="card">
-                <h3>Who I Am</h3>
-                <p>
-                    I’m Sidney, a passionate learner and enthusiast in AI, Machine Learning, and Data Science, 
-                    with a strong foundation in Python programming. My journey in technology is driven by curiosity and a relentless 
-                    desire to solve real-world problems through innovative solutions. I thrive on continuous learning, acquiring new skills, 
-                    and applying them to create impactful projects.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Education</h3>
-                <ul>
-                    <li><strong>Bachelor of Science in Mathematics and Computer Science</strong> - JKUAT (Current)</li>
-                    <li><strong>Software Development</strong> - Power Learn Project Africa (Feb 2025 - Jun 2025)</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Experience</h3>
-                <div class="experience-items">
-                    <div class="experience-item">
-                        <img src="./assets/salamander.png" alt="Salamander Tech Hub logo" class="experience-logo">
-                        <div class="experience-details">
-                            <strong>Community Manager Lead</strong>
-                            <p>Salamander Tech Hub (present)</p>
-                        </div>
-                    </div>
-                    <div class="experience-item">
-                        <img src="./assets/forage.png" alt="Forage logo" class="experience-logo">
-                        <div class="experience-details">
-                            <strong>Data Scientist Job Simulation</strong>
-                            <p>Forage (August 2025)</p>
-                        </div>
-                    </div>
-                    <div class="experience-item">
-                        <img src="./assets/statsspeak.png" alt="Statsspeak Group Limited logo" class="experience-logo">
-                        <div class="experience-details">
-                            <strong>AI Automation Engineer Intern</strong>
-                            <p>Statsspeak Group Limited (Feb 2025 - August 2025)</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="assets/sidney_resume.pdf" download class="download-cv-button">
-                    <i class="fa-solid fa-download"></i> Download My CV
-                </a>
-            </div>
-            <div class="card">
-                <h3>My Interests</h3>
-                <p>
-                    I'm obsessed with AI, Machine Learning, and Python—basically, if it involves code, I'm in! 
-                    If robots ever take over, I’d like to think I’d be on their good side. When I’m not geeking out over tech, you’ll find me lost 
-                    in a book, scoring goals on the soccer field, or effortlessly gliding through the water like a pro swimmer.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!--SECTION 3 - TOOLS AND TECHNOLOGIES-->
-    <section id="prog-languages" class="languages-section">
-        <h2>Tools & Technologies</h2>
-        <p class="tech-subtitle">Skills and tools I work with daily</p>
-
-        <!-- Auto-generated technology list (populated by script.js) -->
-        <ul id="tech-list" class="tech-list" role="list" aria-label="Tools and technologies list">
-            <!-- JS will populate tech items here -->
-        </ul>
-
-        <!-- Modal for showing projects / details for a technology -->
-        <div id="tech-modal" class="tech-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="tech-modal-title">
-            <div class="tech-modal-backdrop" data-action="close"></div>
-            <div class="tech-modal-panel" role="document">
-                <button class="tech-modal-close" aria-label="Close" data-action="close">
-                    <i class="fa-solid fa-times"></i>
-                </button>
-                <div class="tech-modal-header">
-                    <h3 id="tech-modal-title"></h3>
-                </div>
-                <p id="tech-modal-desc"></p>
-                <div id="tech-modal-projects" class="tech-modal-projects"></div>
-            </div>
-        </div>
-    </section>
-
-
-<!-- SECTION 3 - PROJECTS SECTION -->
-<section id="projects" class="projects-section">
-  <h2>Featured Projects</h2>
-  <p class="projects-subtitle">Explore my latest work and contributions</p>
-  
-  <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Projects carousel" tabindex="0">
-    <!-- Project 1 -->
-    <div class="project-slide active" data-title="Job Fit Alchemist">
-      <div class="project-card">
-        <div class="project-image-wrapper">
-          <img src="/assets/job-fit-alchemist.png" alt="job-fit-alchemist" class="project-image">
-          <div class="project-overlay">
-            <a href="https://job-fit-alchemist.vercel.app/" target="_blank" class="project-link">View Live</a>
-          </div>
-        </div>
-        <div class="project-details">
-          <h3>Job Fit Alchemist</h3>
-          <p>
-            AI-powered platform helping job seekers write strong applications, match skills to requirements, and prepare for interviews with CV analysis, skill roadmaps, and mock interviews.
-          </p>
-
-          <div class="tags">
-            <span class="tag-tech">TypeScript</span>
-            <span class="tag-tech">Supabase</span>
-            <span class="tag-tech">AI</span>
-          </div>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Software developer · Data · Community</p>
+        <h1>Web applications, data systems, and <em>community</em> work.</h1>
+        <p class="lede">I am Sidney Muriuki, a software developer building web applications and data-driven systems. I also lead community initiatives at Salamander Tech Hub, including developer events, hackathons, and technical programmes.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="button button-quiet" href="#contact">Contact me</a>
         </div>
       </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-slide" data-title="Takeaway">
-      <div class="project-card">
-        <div class="project-image-wrapper">
-          <img src="/assets/takeaway.png" alt="takeaway" class="project-image">
-          <div class="project-overlay">
-            <a href="https://takeaway-ruby.vercel.app/" target="_blank" class="project-link">View Live</a>
-          </div>
-        </div>
-        <div class="project-details">
-          <h3>Takeaway</h3>
-          <p>
-            Web platform for the MICE industry that streamlines sharing of presentations and documents from speakers to attendees with secure, shareable links.
-          </p>
-
-          <div class="tags">
-            <span class="tag-tech">HTML</span>
-            <span class="tag-tech">CSS</span>
-            <span class="tag-tech">JavaScript</span>
-          </div>
-        </div>
+      <div class="hero-portrait">
+        <div class="portrait-frame"><img src="assets/headshot.webp" alt="Portrait of Sidney Muriuki"></div>
+        <p class="portrait-note"><span></span> Nairobi, Kenya</p>
       </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-slide" data-title="Learn PostgreSQL">
-      <div class="project-card">
-        <div class="project-image-wrapper">
-          <img src="/assets/learn-postgre-sql.png" alt="learn-postgresql" class="project-image">
-          <div class="project-overlay">
-            <a href="https://fahimahammed.github.io/learn-postgresql/#/" target="_blank" class="project-link">View Live</a>
-          </div>
-        </div>
-        <div class="project-details">
-          <h3>Learn PostgreSQL</h3>
-          <p>
-            Open-source learning platform teaching PostgreSQL fundamentals through hands-on lessons, quizzes, and exercises. I contributed by adding Docsify viewer and creating Markdown content.
-          </p>
-
-          <div class="tags">
-            <span class="tag-tech">Docsify</span>
-            <span class="tag-tech">Markdown</span>
-            <span class="tag-open-source">Open-source</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Live region for accessibility announcements -->
-    <div id="carousel-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
-
-    <!-- Carousel controls -->
-    <button type="button" class="carousel-control prev" aria-label="Previous project" tabindex="0">
-      <i class="fa-solid fa-chevron-left"></i>
-    </button>
-    <button type="button" class="carousel-control next" aria-label="Next project" tabindex="0">
-      <i class="fa-solid fa-chevron-right"></i>
-    </button>
-  
-    <!-- Pagination dots (generated dynamically) -->
-    <div class="carousel-dots" aria-hidden="true"></div>
-  </div>
-</section>
-
-
-<!--SECTION 4 - SERVICES OFFERED SECTION-->
-<section id="services" class="services-section">
-    <h2>Services Offered</h2>
-    <div class="services-cards">
-        <!-- Service 1: Web Development -->
-        <div class="service-card">
-            <div class="service-icon-wrapper">
-                <i class="fa-solid fa-laptop-code"></i>
-            </div>
-            <h3>Web Development</h3>
-            <p>
-                I craft responsive, user-focused websites that blend modern design with seamless functionality. Each site is tailored to reflect your brand, engage your audience, and deliver a compelling digital experience.
-            </p>
-            <div class="service-features">
-                <span class="feature-tag">Responsive Design</span>
-                <span class="feature-tag">React & Vue</span>
-                <span class="feature-tag">UI/UX Focus</span>
-            </div>
-        </div>
-
-        <!-- Service 2: Automation & Scripting -->
-        <div class="service-card">
-            <div class="service-icon-wrapper">
-                <i class="fa-solid fa-code"></i>
-            </div>
-            <h3>Automation & Scripting</h3>
-            <p>
-                Streamline your workflows and eliminate repetitive tasks with tailored automation solutions using Python. I develop custom scripts to enhance efficiency, accuracy, and scalability.
-            </p>
-            <div class="service-features">
-                <span class="feature-tag">Python Scripts</span>
-                <span class="feature-tag">API Integration</span>
-                <span class="feature-tag">Data Processing</span>
-            </div>
-        </div>
-
-        <!-- Service 3: IT Support -->
-        <div class="service-card">
-            <div class="service-icon-wrapper">
-                <i class="fa-solid fa-headset"></i>
-            </div>
-            <h3>IT Support</h3>
-            <p>
-                I provide dependable, solution-focused IT support to ensure your systems run smoothly. My services include troubleshooting, system setup, network diagnostics, and remote assistance.
-            </p>
-            <div class="service-features">
-                <span class="feature-tag">24/7 Support</span>
-                <span class="feature-tag">Troubleshooting</span>
-                <span class="feature-tag">System Setup</span>
-            </div>
-        </div>
-    </div>
-</section>
-</section>
-
-    <!--SECTION 5 - CONTACT SECTION-->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <div class="group">
-            <div class="text">
-                <p>I'd love to connect with you! Whether you have a project in mind, need assistance, or just want to network, feel free to reach out. I am always open to opportunities for collaboration and professional growth.</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:sidneybarakamuriuki1@gmail.com">sidneybarakamuriuki1@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-brands fa-github"></i>
-                        <div>
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/mathncode-sid" target="_blank">github.com/mathncode-sid</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/sidney-muriuki-688207285/" target="_blank">Connect with me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <form action="https://stackverify.site/api/f/f_acyOwoB986" method="POST" class="contact-form">
-                
-                <div class="form-group">
-                    <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email"><i class="fa-solid fa-envelope"></i> Email Address:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="reason"><i class="fa-solid fa-comments"></i> Reason for reaching out:</label>
-                    <select name="reason" id="reason" required>
-                        <option value="" selected>Select the reason from the dropdown below</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="job offer">Job Offer</option>
-                        <option value="question">Question</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message"><i class="fa-solid fa-pen-to-square"></i> Detailed message:</label>
-                    <textarea name="message" id="message" placeholder="Enter your detailed message here" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                    <span>Send Message</span>
-                    <i class="fa-solid fa-paper-plane"></i>
-                </button>
-            </form>
-        </div>
     </section>
-   </main>
-   <footer>
-       <p>&copy; <span id="current-year"></span> Sidney Muriuki. All rights reserved.</p>
-   </footer>
-   <script src="script.js"></script>
+
+    <section class="capabilities section container" aria-labelledby="capabilities-title">
+      <div class="section-heading"><p class="eyebrow">01 / Focus</p><h2 id="capabilities-title">Areas of work.</h2></div>
+      <div class="capability-grid">
+        <article><span class="number">01</span><h3>Web applications</h3><p>Building applications with accounts, dashboards, forms, databases, and role-based access.</p><p class="stack">Next.js · TypeScript · Prisma · Auth.js</p></article>
+        <article><span class="number">02</span><h3>Data and machine learning</h3><p>Working with transaction data, graph models, and APIs for fraud-detection projects.</p><p class="stack">Python · FastAPI · PyTorch · Neo4j</p></article>
+        <article><span class="number">03</span><h3>Community and open source</h3><p>Contributing to technical learning resources and organising developer events and hackathons.</p><p class="stack">Documentation · Events · Hackathons</p></article>
+      </div>
+    </section>
+
+    <section id="work" class="work section container" aria-labelledby="work-title">
+      <div class="section-heading split"><div><p class="eyebrow">02 / Projects</p><h2 id="work-title">Selected work.</h2></div><p>Web, data, and open-source projects I have worked on.</p></div>
+      <div class="project-list">
+        <article class="project-card featured">
+          <a class="project-image" href="https://lifelineplus-nu.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="assets/lifeline-plus.png" alt="LifeLine Plus patient care dashboard"><span>View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+          <div class="project-copy"><p class="project-kind">Health technology · SDG 3</p><h3>LifeLine+</h3><div class="project-case"><p><strong>Problem</strong> Patients, caregivers, and clinicians need a shared way to track medication routines, appointments, and health information.</p><p><strong>Solution</strong> A role-based care platform for medication tracking, health records, appointment management, and care-team coordination.</p></div><ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>Auth.js</li><li>Tailwind CSS</li></ul></div>
+        </article>
+        <article class="project-card">
+          <a class="project-image" href="https://hybrid-gnn-fraud-intel.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="assets/hybrid-gnn-fraud-intel.png" alt="Hybrid GNN Fraud Intelligence System dashboard"><span>View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+          <div class="project-copy"><p class="project-kind">Fintech · Machine learning</p><h3>Hybrid GNN Fraud Intelligence</h3><div class="project-case"><p><strong>Problem</strong> Transaction-only checks can miss fraud rings, mule accounts, and other connected patterns in mobile-money activity.</p><p><strong>Solution</strong> A team-built fraud platform that combines GNNs, XGBoost, graph data, and analyst-facing explanations.</p></div><ul class="tags"><li>Python</li><li>FastAPI</li><li>PyTorch</li><li>React</li><li>Neo4j</li></ul></div>
+        </article>
+        <article class="project-card">
+          <a class="project-image" href="https://fahimahammed.github.io/learn-postgresql/#/" target="_blank" rel="noopener noreferrer"><img src="assets/learn-postgre-sql.png" alt="Learn PostgreSQL documentation site"><span>View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+          <div class="project-copy"><p class="project-kind">Open-source education</p><h3>Learn PostgreSQL</h3><div class="project-case"><p><strong>Problem</strong> New PostgreSQL learners need one practical place to work through concepts and exercises.</p><p><strong>Solution</strong> An open-source learning resource with guided lessons, quizzes, and exercises; I contributed documentation structure and Markdown content.</p></div><ul class="tags"><li>Docsify</li><li>Markdown</li><li>Open source</li></ul></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section container" aria-labelledby="experience-title">
+      <div class="section-heading"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">Work and community.</h2></div>
+      <div class="timeline">
+        <article><p class="timeline-date">Present</p><div><h3>Community Manager Lead <span>· Salamander Tech Hub</span></h3><p>Coordinate community operations, events, and opportunities for developers and learners.</p></div></article>
+        <article><p class="timeline-date">Feb — Aug 2025</p><div><h3>AI Automation Engineer Intern <span>· Statsspeak Group</span></h3><p>Worked on automation tasks using data and AI tools.</p></div></article>
+        <article><p class="timeline-date">Aug 2025</p><div><h3>Data Scientist Job Simulation <span>· Forage</span></h3><p>Completed a data science simulation covering analysis and business communication.</p></div></article>
+      </div>
+      <aside class="community-callout">
+        <p class="eyebrow">Community work</p><h3>Events, hackathons, and learning programmes.</h3><p>Work I have contributed to through Salamander Tech Hub and partner communities.</p>
+        <div class="community-highlights">
+          <article><p class="highlight-type">Community impact</p><h4>Burgers &amp; Code 1.0</h4><p>Co-created the event report for Salamander Tech Hub’s Burgers &amp; Code 1.0—covering budget and attendance metrics, plus the successful merge of 20 pull requests across partner projects.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7487583320093011968/" target="_blank" rel="noopener noreferrer">Read the report <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+          <article><p class="highlight-type">Hackathon win</p><h4>ChamaConnect Virtual Hackathon</h4><p>Placed first in MUIAA Ltd’s ChamaConnect Virtual Hackathon, an innovation challenge focused on improving the future of digital chamas through testing, product improvement, and collaboration.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7461271236371820544/" target="_blank" rel="noopener noreferrer">See the announcement <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+        </div>
+      </aside>
+    </section>
+
+    <section class="toolkit section container" aria-labelledby="toolkit-title">
+      <div class="section-heading split"><div><p class="eyebrow">04 / Toolkit</p><h2 id="toolkit-title">Tools I use.</h2></div><p>Grouped by the type of work they support.</p></div>
+      <div class="tool-groups">
+        <div><h3>Data & backend</h3><ul class="tool-pills"><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Pandas</li><li>NumPy</li><li>FastAPI</li></ul></div>
+        <div><h3>AI & intelligent systems</h3><ul class="tool-pills"><li>PyTorch</li><li>Neo4j</li><li>XGBoost</li><li>n8n</li><li>Chainlit</li></ul></div>
+        <div><h3>Product & web</h3><ul class="tool-pills"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li><li>Auth.js</li><li>Docsify</li></ul></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container" aria-labelledby="contact-title">
+      <p class="eyebrow">05 / Contact</p><h2 id="contact-title">Get in touch.</h2>
+      <div class="contact-grid">
+        <form action="https://stackverify.site/api/f/f_acyOwoB986" method="POST" class="contact-form">
+          <label for="name">Name<input type="text" name="name" id="name" autocomplete="name" required></label>
+          <label for="email">Email address<input type="email" name="email" id="email" autocomplete="email" required></label>
+          <label for="reason">How can I help?<select name="reason" id="reason" required><option value="" selected disabled>Select an option</option><option value="collaboration">Collaboration</option><option value="job offer">Job opportunity</option><option value="question">Question</option><option value="other">Other</option></select></label>
+          <label for="message">Your message<textarea name="message" id="message" rows="5" required></textarea></label>
+          <button type="submit">Send message <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container"><span>© <span id="current-year"></span> Sidney Muriuki</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
